@@ -51,7 +51,7 @@ Create GitHub release and publish to PyPI altogether within a single commit push
 4. Create a GitHub release.
 5. Publish to PyPI.
 
-> Note: Since the workflow highly depends on the **latest** commit being pushed to the repository, make sure to pull any changes before committing.
+> **⭐️Note:** Since the workflow highly depends on the **latest** commit being pushed to the repository, make sure to pull any changes before committing.
 
 
 ## Links
