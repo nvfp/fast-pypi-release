@@ -1,3 +1,5 @@
+# Version: July 7, 2023
+
 name: Fast PyPI release
 
 on:
@@ -57,9 +59,9 @@ jobs:
       - id: validation
         name: Validating
         run: |
-          # Look for files in the "docs" folder with "changelog" in their name (ignore case)
+          # Look (recursively) for files in the "docs" folder with "changelog" in their name (ignore case)
           files=$(find docs -iname "*changelog*")
-          echo "DEBUG: files: $files"
+          echo "DEBUG: files: '$files'"
 
           # Validation I: Only one changelog file should be in the "docs" folder
           file_count=$(echo "$files" | wc -l)
