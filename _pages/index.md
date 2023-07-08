@@ -23,6 +23,8 @@ Create GitHub release and publish to PyPI altogether within a single commit push
     1. Visit https://github.com/YOUR_USERNAME/REPOSITORY/settings/secrets/actions
     2. Create `PYPI_USERNAME` and `PYPI_PASSWORD` secrets
 
+> **⭐️Note:** Since each version has its own installation procedure, please check [this page](https://nvfp.github.io/fast-pypi-release/docs-archive) for version-specific instructions.
+
 
 ## Workflow
 
