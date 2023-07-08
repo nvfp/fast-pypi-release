@@ -6,13 +6,14 @@ Create GitHub release and publish to PyPI altogether within a single commit push
 ## Installation
 
 1. Copy `fast-pypi-release.yml` and put it under your repository's `.github/workflows` folder
-2. Update your Git name and email by searching "EDITME" in `fast-pypi-release.yml` file
-3. Make sure you have just one changelog file in the `docs` folder:
+1. Update your main branch name by searching "EDITME" in `fast-pypi-release.yml` file
+1. Update your Git name and email by searching "EDITME" in `fast-pypi-release.yml` file
+1. Make sure you have just one changelog file in the `docs` folder:
     - The file can be any extension like .txt or .md
     - The file's name should include the word "changelog" (case insensitive)
     - Visit [this page](https://nvfp.github.io/fast-pypi-release/demo) to see the allowed format of the changelog
     - The `docs` folder is at the root of your repository
-4. Set up your `PYPI_USERNAME` and `PYPI_PASSWORD` as secrets in your repository's GitHub Actions (to be used by Twine for publishing to PyPI):
+1. Set up your `PYPI_USERNAME` and `PYPI_PASSWORD` as secrets in your repository's GitHub Actions (to be used by Twine for publishing to PyPI):
     1. Visit https://github.com/YOUR_USERNAME/REPOSITORY/settings/secrets/actions
     2. Create `PYPI_USERNAME` and `PYPI_PASSWORD` secrets
 
