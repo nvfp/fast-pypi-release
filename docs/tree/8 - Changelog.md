@@ -1,5 +1,7 @@
 # Changelog
 
+- 1.1.1 (July 8):
+    - Improved debugger
 - 1.1.0 (July 8):
     - Fixed bugs:
         - When parsing the latest changelog, anything inside backticks (\`\`) will be treated as a command and executed with `echo` (in jobs: 'check-changelog-file', steps: 'Parse latest changelog').
