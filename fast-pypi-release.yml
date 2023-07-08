@@ -92,6 +92,7 @@ jobs:
 
           # Get the changelog file text from previous step
           script = """
+          # Note: Don't use `echo "$foo"`; instead use `echo '$foo'` to prevent `` blocks from being executed (See #1.1.0 changelog)
           echo '${{ steps.validation.outputs.text }}'
           """
           text = sp.check_output(['bash', '-c', script]).decode().strip()
@@ -186,9 +187,11 @@ jobs:
           git pull
 
           # Check it
+          echo "::group:: Debugging"
           echo "DEBUG: Run 'git log -2'"
           git log -2
           echo "---"
+          echo "::endgroup::"
 
       - name: Release
         uses: nvfp/gh-action-simple-release@1.8.0
@@ -224,9 +227,11 @@ jobs:
           git pull
 
           # Check it
+          echo "::group:: Debugging"
           echo "DEBUG: Run 'git log -2'"
           git log -2
           echo "---"
+          echo "::endgroup::"
 
       - name: Build
         run: python -m build
