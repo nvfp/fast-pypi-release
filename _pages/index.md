@@ -42,7 +42,7 @@ Create GitHub release and publish to PyPI altogether within a single commit push
 4. Make the **last commit** (`git commit -am "3.0.0 Release"`) to trigger the workflow.
 5. Push (`git push`) the changes.
 6. Wait for the workflow to complete.
-7. Pull (`git pull`) again once the workflow updates the `pyproject.toml`.
+7. Pull (`git pull`) again once the workflow has updated the `pyproject.toml`.
 
 **🔄 Workflow jobs:**
 1. Check the commit message:
