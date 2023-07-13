@@ -1,5 +1,5 @@
 # Fast PyPI release (version 1.2.0).
-# Source code: https://github.com/nvfp/fast-pypi-release
+# Documentation: https://nvfp.github.io/fast-pypi-release
 
 name: Fast PyPI release
 
@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     
     outputs:
-      latest_changelog: ${{ steps.match.outputs.latest_changelog }}
+      latest_changelog: ${{ steps.parse.outputs.latest_changelog }}
 
     steps:
       - name: Checkout
@@ -75,7 +75,7 @@ jobs:
           # Pass the Changelog file path
           echo "pth=$files" >> $GITHUB_OUTPUT
 
-      - id: match
+      - id: parse
         name: Parse the latest changelog
         shell: python
         run: |
