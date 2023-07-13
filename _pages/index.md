@@ -4,9 +4,9 @@ layout: main
 title: Home
 ---
 
-# Fast PyPI Release
+# Fast PyPI release
 
-Create GitHub release and publish to PyPI altogether within a single commit push.
+Create GitHub release and publish to PyPI altogether within a single commit push🚀.
 
 
 ## Installation
@@ -22,8 +22,6 @@ Create GitHub release and publish to PyPI altogether within a single commit push
 1. Set up your `PYPI_USERNAME` and `PYPI_PASSWORD` as secrets in your repository's GitHub Actions (to be used by Twine for publishing to PyPI):
     1. Visit https://github.com/YOUR_USERNAME/REPOSITORY/settings/secrets/actions
     2. Create `PYPI_USERNAME` and `PYPI_PASSWORD` secrets
-
-> **⭐️Note:** Since each version has its own installation procedure, please check [this page](https://nvfp.github.io/fast-pypi-release/docs-archive) for version-specific instructions.
 
 
 ## Workflow
@@ -63,7 +61,7 @@ Create GitHub release and publish to PyPI altogether within a single commit push
 > **⭐️Note:** Since the workflow highly depends on the **latest** commit being pushed to the repository, make sure to pull any changes before committing.
 
 
-## Links
+## Links 🧩
 
 - [Documentation](https://nvfp.github.io/fast-pypi-release)
 - [Demo](https://nvfp.github.io/fast-pypi-release/demo)
