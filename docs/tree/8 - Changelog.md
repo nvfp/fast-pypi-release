@@ -1,5 +1,9 @@
 # Changelog
 
+- 1.3.0 (Jul 14):
+    - New features:
+        - Make 'prerelease' releases.
+        - Workflow stops if git tag or PyPI version already exists.
 - 1.2.0 (Jul 13):
     - Bug fixed: There's still an issue with the \`\` block getting executed, and it's because the single quotes inside `x` in `echo '$x'` ([ref](https://github.com/nvfp/now-i-can-sleep/actions/runs/5540835444/jobs/10113450912)).
         - **Solution**: So, here's what happened: The flow changed. At first, the changelog text went through GitHub step outputs. But now, only the path of the changelog file is passed through the step outputs. The changelog text is opened manually with Python. Why the change? Well, it turns out fixing the issue with `echo '$x'` and `x` with single quotes was really tough.
