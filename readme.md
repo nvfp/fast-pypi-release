@@ -22,29 +22,10 @@ Create GitHub release and publish to PyPI altogether within a single commit push
 
 ## Workflow
 
-🎯 To trigger the workflow (create a release and upload to PyPI), commit with the message pattern below.
-- Pattern: `\d+\.\d+\.\d+(b\d*)? (?i)Release.*`
-- Examples ✔️:
-    - 1.0.0 Release: First release.
-    - 3.2.0 RELEASE
-    - 5.0.2 release (foo bar)
-    - 2.0.0b Release: Testing
-    - 2.0.0b3 Release (dev)
-    - 2.0.0b913 RELEASE: beta version
-    - 1.2.3b4 release: unstable
-
-**💼 Your jobs:**
-1. Finish all your work locally.
-1. Pull (`git pull`) any changes from the remote (if any).
-1. Update the changelog file (let's say it's for the `3.0.0` release).
-1. Make the **last commit** (`git commit -am "3.0.0 Release"`) to trigger the workflow.
-1. Push (`git push`) the changes.
-1. Wait for the workflow to complete.
-1. Pull (`git pull`) again once the workflow has updated the `pyproject.toml`.
-
-Click [here](https://nvfp.github.io/fast-pypi-release/demo) to read the demo.
-
-> **⭐️Note:** Since the workflow highly depends on the ***latest*** commit being pushed to the repository, make sure to pull any changes before committing.
+There are 3 types of workflows:
+- Release `Latest`: [https://nvfp.github.io/fast-pypi-release/trigger-latest-release](https://nvfp.github.io/fast-pypi-release/trigger-latest-release)
+- Release `Prerelease`: [https://nvfp.github.io/fast-pypi-release/trigger-prerelease-release](https://nvfp.github.io/fast-pypi-release/trigger-prerelease-release)
+- Release `Testing`: [https://nvfp.github.io/fast-pypi-release/trigger-testing-release](https://nvfp.github.io/fast-pypi-release/trigger-testing-release)
 
 
 ## Links
