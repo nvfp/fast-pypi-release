@@ -1,7 +1,7 @@
 # Release ***Latest***
 
 After pushing the `trigger commit`, this workflow will:
-- Create a GitHub release (marked as latest)
+- Create a GitHub release (marked as `Latest`)
 - Publish to PyPI
 
 
