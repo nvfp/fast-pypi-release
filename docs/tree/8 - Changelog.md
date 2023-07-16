@@ -1,5 +1,7 @@
 # Changelog
 
+- 1.4.0 (Jul 16):
+    - New feature: Added "Testing" mode. Just create a Git tag and publish it to PyPI (skipping the GitHub release) using the commit pattern `X.X.Xb(X) Testing.*`.
 - 1.3.0 (Jul 14):
     - New features:
         - Make 'prerelease' releases.
