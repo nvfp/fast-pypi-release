@@ -23,7 +23,7 @@ def result(input_str):
     if res is None:
         res = re.match(REGEX_TESTING, input_str, re.IGNORECASE)
 
-    if res is None:
+    if res is None:  # Not a match
         return False, None, None, None, None  # match, ver, desc, prerelease, testing
     else:
         ver = res.group('ver')
