@@ -1,0 +1,1 @@
+- Keep in mind that when making a release with version `X.X.Xb`, it will appear as `X.X.Xb` on GitHub, but as `X.X.Xb0` on PyPI.
