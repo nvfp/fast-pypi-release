@@ -1,6 +1,13 @@
-# Trigger ***Latest*** release workflow
+# Release ***Latest***
 
-## Commit message pattern
+After pushing the `trigger commit`, this workflow will:
+- Create a GitHub release (marked as latest)
+- Publish to PyPI
+
+
+## The `trigger commit` message pattern
+
+To start the workflow, commit with the pattern below.
 
 - Pattern: `\d+\.\d+\.\d+ (?i)Release.*`
 - Examples ✔️:
@@ -8,7 +15,19 @@
     - 3.2.0 RELEASE
     - 5.0.2 release (foo bar)
 
-## Example
+
+## Workflow
+
+1. Finish all your work locally.
+1. Pull (`git pull`) any changes from the remote (if any).
+1. Update the Changelog file (let's say it's for the `3.0.0` release).
+1. Make the `trigger commit` (`git commit -am "3.0.0 Release"`) to trigger the workflow.
+1. Push (`git push`) the changes.
+1. Wait for the workflow to complete.
+1. Pull (`git pull`) again once the workflow has updated the `pyproject.toml`.
+
+
+## Demo
 
 1. Let's say your project is currently on version 1.0.0; The Changelog file:
 
@@ -33,3 +52,8 @@
 The workflow will make a `2.0.0` git tag and a GitHub release titled `2.0.0` with the description `- 2.0.0\n - Foo bar`. Don't worry, the newline character will be treated as a newline.
 
 > ⚠️ Note: Don't forget to pull before pushing that trigger commit, since the workflow highly depends on that commit.
+
+
+## Tips
+
+- Make sure the version in the trigger commit matches the version in the latest changelog in the changelog file.
