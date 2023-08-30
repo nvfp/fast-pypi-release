@@ -1,3 +1,5 @@
+> ⚠️Deprecation notice: This repo has been sunset since August 30, 2023. Visit the next generation [at here](https://github.com/scapeville/action-PyCICD).
+
 # Fast PyPI release
 
 Create GitHub release and publish to PyPI altogether within a single commit push.
